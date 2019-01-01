@@ -49,8 +49,8 @@ function calculateResults() {
 
 // Errors Function
 function showError (error) {
-    // hide loader and results
-    document.querySelector('#loader').style.display = 'none';
+    // hide loader and results when in error condition and show alert
+    document.querySelector('#loading').style.display = 'none';
     document.querySelector('#results').style.display = 'none';
     // create error div
     const errorDiv = document.createElement('div');
@@ -69,7 +69,7 @@ function showError (error) {
     setTimeout(clearError, 3000);
 }
 
-// Clear Error Function
+// Clear Errorx Function
 function clearError() {
     document.querySelector('.alert').remove();
 }
