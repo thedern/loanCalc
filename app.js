@@ -40,6 +40,11 @@ function calculateResults() {
         document.querySelector('#results').style.display = 'block';
         // hide loader gif
         document.querySelector('#loading').style.display = 'none';
+        // clear form
+        amount.value = '';
+        interest.value = '';
+        years.value = '';
+
     } else {
         // create an error element and show it on screen
         showError('Please Check Your Numbers');
